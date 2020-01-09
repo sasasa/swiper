@@ -39,18 +39,22 @@
 <script src="loader.js"></script>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
 <!-- https://www.tam-tam.co.jp/tipsnote/html_css/post388.html -->
-<script src="https://raw.githubusercontent.com/mckamey/cssuseragent/master/cssua.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cssuseragent/2.1.31/cssua.min.js" integrity="sha256-dMYqXxNXfaz/OzoUHWi9t8z42CAhWOfwAaGpMSzuHkc=" crossorigin="anonymous"></script>
+
 <!-- http://higezine.com/blog/javascript/2017/10/28/271/ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+
 <!-- https://qiita.com/kyota/items/754e0e6cb7a144eda850 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.js"></script>
+
 <!-- https://xn--web-oi9du9bc8tgu2a.com/js-swiper-sample/ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script>
 $(document).ready(function(){
+$('.swiper-wrapper').imagesLoaded(function(){
 
-  $('.swiper-wrapper').imagesLoaded(function(){
 $('.loading .box-loader').delay(200).velocity({
   opacity: 0
 },{
@@ -61,6 +65,7 @@ $('.loading .box-loader').delay(200).velocity({
               duration: 1400,
               easing: 'easeInOutQuad',
               begin:function() {
+                initSwiper()
               },
               complete: function() {
                 window.cancelAnimationFrame(loading.requestID);
@@ -69,7 +74,8 @@ $('.loading .box-loader').delay(200).velocity({
   }
 })
 
-var mySwiper = new Swiper('.swiper-container', {
+function initSwiper() {
+  let mySwiper = new Swiper('.swiper-container', {
   loop: true,
   speed: 1600,
   simulateTouch: false,
@@ -78,12 +84,11 @@ var mySwiper = new Swiper('.swiper-container', {
     delay:2800,
     disableOnInteraction: false
   }
-})
+  })
+}
 
 
 })
-
-
 });
 
 
