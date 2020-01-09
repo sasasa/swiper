@@ -60,7 +60,7 @@ $('.loading .box-loader').delay(200).velocity({
 },{
   duration: 1800,
   easing: 'easeInOutQuad',
-  begin: function() {
+  begin:  function() {
             $('.loading').delay(400).velocity('fadeOut', {
               duration: 1400,
               easing: 'easeInOutQuad',
@@ -76,14 +76,14 @@ $('.loading .box-loader').delay(200).velocity({
 
 function initSwiper() {
   let mySwiper = new Swiper('.swiper-container', {
-  loop: true,
-  speed: 1600,
-  simulateTouch: false,
-  effect: 'fade',
-  autoplay:{
-    delay:2800,
-    disableOnInteraction: false
-  }
+    loop: true,
+    speed: 1600,
+    simulateTouch: false,
+    effect: 'fade',
+    autoplay:{
+      delay:2800,
+      disableOnInteraction: false
+    }
   })
 }
 
