@@ -137,3 +137,54 @@ main {
   max-height:calc(100vh - 40px);
   margin: 0;
 }
+
+/* ---------------------------------------- */
+/* 縦書き */
+/* ---------------------------------------- */
+.vertical {
+  writing-mode: vertical-rl;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hero-catch p {
+  position: relative;
+}
+.hero-catch span {
+  position: absolute;
+  /* top:0; */
+  /* opacity:0; */
+  transform: translateY(10px);  
+  will-change: transform, opacity;  
+}
+/* .hero-catch .catch-01 {
+  right: 0;
+}
+.hero-catch .catch-02 {
+  left: 40px;
+}
+.hero-catch .catch-03 {
+  left: 0;
+} */
+
+/* .catch-01,
+.catch-02,
+.catch-03 {
+  animation: fadeIn 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+.catch-02 {
+  animation-delay: 0.4s;
+}
+.catch-03 { 
+  animation-delay: 0.6s;
+}
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+    transform: translateY(5px);
+  }
+  100%{
+    opacity:1;
+    transform: translateY(0px);
+  }
+} */
