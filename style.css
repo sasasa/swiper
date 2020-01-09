@@ -4,9 +4,9 @@
   font-style: normal;
   font-weight: 400;
   src: local("Noto Sans CJK JP Regular"),
-      url(//font/NotoSansJP-Regular.woff2) format('woff2'),
-      url(//font/NotoSansJP-Regular.woff) format('woff'),
-      url(//font/NotoSansJP-Regular.otf) format('opentype');
+      url(/font/NotoSansJP-Regular.woff2) format('woff2'),
+      url(/font/NotoSansJP-Regular.woff) format('woff'),
+      url(/font/NotoSansJP-Regular.otf) format('opentype');
 }
 
 @font-face {
@@ -14,9 +14,9 @@
   font-style: normal;
   font-weight: 500;
   src: local("Noto Sans CJK JP Medium"),
-      url(//font/NotoSansJP-Medium.woff2) format('woff2'),
-      url(//font/NotoSansJP-Medium.woff) format('woff'),
-      url(//font/NotoSansJP-Medium.otf) format('opentype');
+      url(/font/NotoSansJP-Medium.woff2) format('woff2'),
+      url(/font/NotoSansJP-Medium.woff) format('woff'),
+      url(/font/NotoSansJP-Medium.otf) format('opentype');
 }
 
 @font-face {
@@ -24,9 +24,9 @@
   font-style: normal;
   font-weight: 700;
   src: local("Noto Sans CJK JP Bold"),
-      url(//font/NotoSansJP-Bold.woff2) format('woff2'),
-      url(//font/NotoSansJP-Bold.woff) format('woff'),
-      url(//font/NotoSansJP-Bold.otf) format('opentype');
+      url(/font/NotoSansJP-Bold.woff2) format('woff2'),
+      url(/font/NotoSansJP-Bold.woff) format('woff'),
+      url(/font/NotoSansJP-Bold.otf) format('opentype');
 }
 /* ---------------------------------------- */
 /* Base Style */
