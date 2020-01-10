@@ -11,7 +11,13 @@
 </head>
 <body>
 <section>
-  <div class="swiper-container">
+  <h1 class="header-logo">
+    <a href="#hero" class="js-anchor">
+      <img src="./img/header-logo.png" width="132" height="146" alt="えんなり和菓市 wagashi">
+    </a>
+  </h1>
+
+  <div class="swiper-container" id="hero">
     <ul class="swiper-wrapper">
       <li class="swiper-slide">
         <p><img src="./img/hero-slider-01.jpg" width="1440" height="810" alt=""></p>
@@ -28,12 +34,34 @@
     </ul>
   </div>
   <div class="hero-catch">
-    <p class="vertical">
-      <span class="catch-01">わがしとワタシ</span>
-      <span class="catch-02">ふだんの暮らしに、</span>
-      <span class="catch-03">和菓子をひとつ。</span>
+    <p>
+      <span class="vertical catch-01">しぜんとワタシ</span>
+      <span class="vertical catch-02">ふだんの暮らしに、</span>
+      <span class="vertical catch-03">ミドリをひとつ。</span>
     </p>
   </div>
+  <p class="hero-date">2019.12.7<span>SAT</span> - 8<span>SUN</span> at コミネゼロ</p>
+</section>
+<section>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+</section>
+<section>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+</section>
+<section>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
+  <h2>ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ ほげほげ </h2>
 </section>
 <div class="loading">
   <div class="box-loader">
@@ -99,7 +127,15 @@ function initSwiper() {
 })
 });
 
+$('.js-anchor').click(function(e) {
+  e.preventDefault();
+  let href = $(this).attr("href")
 
+  $(href).delay(200).velocity("scroll", {
+    duration: 600, easing: "easeInOutQuart"
+  });
+  return false;
+});
 
 
 

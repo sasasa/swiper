@@ -124,10 +124,19 @@ main {
 .box-loader .dot.is-colored .color {
   opacity: 1;
 }
+/* ---------------------------------------- */
+/* header logo */
+/* ---------------------------------------- */
+.header-logo {
+  position: fixed;
+  top: 1.2rem;
+  left: 1.9rem;
+  z-index: 100;
 
+}
 
 /* ---------------------------------------- */
-/* hero */
+/* hero image */
 /* ---------------------------------------- */
 .swiper-slide {
   background-size:cover;
@@ -139,35 +148,40 @@ main {
 }
 
 /* ---------------------------------------- */
-/* 縦書き */
+/* hero catch 縦書き */
 /* ---------------------------------------- */
 .vertical {
   writing-mode: vertical-rl;
-  font-size: 32px;
   font-weight: 700;
+  z-index: 100;
+  white-space: nowrap
 }
-
 .hero-catch p {
   position: relative;
 }
 .hero-catch span {
   position: absolute;
-  /* top:0; */
-  /* opacity:0; */
+  opacity: 0;
   transform: translateY(10px);  
   will-change: transform, opacity;  
 }
-/* .hero-catch .catch-01 {
-  right: 0;
+.hero-catch .catch-01 {
+  font-size: 2rem;
+  bottom: -1.6rem;
+  right: 4rem;
 }
 .hero-catch .catch-02 {
-  left: 40px;
+  font-size: 1.4rem;
+  bottom: 0rem;
+  right: 8rem;
 }
 .hero-catch .catch-03 {
-  left: 0;
-} */
+  font-size: 1.4rem;
+  bottom: 1.5rem;
+  right: 10rem;
+}
 
-/* .catch-01,
+.catch-01,
 .catch-02,
 .catch-03 {
   animation: fadeIn 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
@@ -187,4 +201,19 @@ main {
     opacity:1;
     transform: translateY(0px);
   }
-} */
+}
+/* ---------------------------------------- */
+/* hero date 縦書き */
+/* ---------------------------------------- */
+.hero-date {
+  font-size: 2rem;
+  font-weight: 700;
+  z-index: 100;
+  margin-top: -1.6rem;
+  position: absolute;
+  left: 1rem;
+}
+.hero-date span {
+  writing-mode: vertical-rl;
+  font-size: 0.8rem;
+}
